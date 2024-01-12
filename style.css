@@ -117,9 +117,13 @@ header{
     padding: 30px 150px;
     gap: 24PX ;
 }
-
+.problem{
+    text-align: center;
+}
 .div-conteinar{
     display: flex;
+    margin: 100px;
+   gap: 10px;
 }
 .skills{
     border-radius: 5px;
@@ -127,10 +131,11 @@ header{
     padding: 30px;
     text-align: left;
     box-shadow: inset;
+    
 }
 .bac-sec{
     background-color: #fff8f3;
-    margin: 150px;
+    margin: 100px;
 }
 .summary{
     text-align: center;
@@ -204,6 +209,86 @@ input{
     padding: 15px 30px;
  }
 
+ /*responsive media quary */
+ .hide{
+    display: none;
+ }
+  @media screen and (max-width:576px) {
+    .div-conteinar{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 10px;
+    }
+    #what-i-do{
+        padding:0px  0px;
+        gap: 24PX ;
+    }
+    .skills{
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+        box-shadow: inset;
+        
+    }
+    .bac-sec {
+        
+        margin: 020px;
+        padding: 0px;
+    }
+    .summary-conteinar{
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+       
+    }
+    .summary-conteinar-item{
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .main-footer{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+      
+    }
+    .abaut-info-conteinar{
+     flex-direction: column;
+     gap: 5px;
+     margin: 0px;
+        
+    }
+    .abaut{
+        margin: 0px;
+        padding: 0px;
+        width: 100% ;
+    }
+    nav{
+       flex-direction: column;
+       margin: 0px;
+       padding: 0px;
+       width: 100%;
+    
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  .item{
+    padding: 0px;
+   width: 100%;
+}
+.banner{
+    padding: 0px;
+    margin: 0px;
+}
+
+  /* resposive for mediam divice */
+  @media screen and (main-width:577) and (max-width:992) {
+    .div-conteinar{
+        flex-direction: column;
+        max-width: 90%;
+    }
+  }
 
 
 
